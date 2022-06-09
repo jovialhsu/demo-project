@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+body {
+  background-color: #979797;
+  color: #fff;
+  margin: 0;
+  padding: 0;}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto 30px auto;}
+
+.panel {
+  background-color: #fff;
+  color: #666;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+  overflow: auto;}
+
+button {
+  border: none;}
+
+/********** LOGO **********/
+h1 {
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  margin: 40px auto 40px auto;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;}
+
+/********** TYPOGRAPHY **********/
+body, button {
+    font-family: 'Jacques Francois', serif;}
+
+h2, h3 {
+  font-weight: normal;
+  margin: 0;}
+h2 {
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 230%;
+  line-height: 1em;
+  padding: 20px 0 0 20px;}
+h3 {
+  font-size: 90%;
+  letter-spacing: 0.2em;}
+
+p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  line-height: 1.4em;}
+
+a {
+    text-decoration: none;}
+
+button {
+  font-size: 90%;
+  text-align: left;
+  text-transform: uppercase;}
+
+  /*****************  No JS ***************/
+#billboard {text-align: center;}
+.js-warning {display: none;}
+
+.no-js .js-warning {
+  display: block;
+  border: 3px solid #fff;
+  text-align: center;
+  background-color: #fff;
+  color: #db5391;
+  padding: 10px;}
+    /********** TABS **********/
+.tab_list {
+  margin: 0;
+  padding: 0;}
+
+.tab_list li {
+  display: inline-block;
+  list-style-type: none;
+  background-color: #303030;
+  border-bottom: 3px solid #858585;
+  font-family: 'Jacques Francois', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;}
+
+.tab_list li a {
+  color: #f2f2f2;
+  display: block;
+  padding: 3px 10px 3px 10px;}
+
+
+/********** HOVER STATES **********/
+.tab_list li.active, .tab_list li.hover {
+  background-color: #e5e5e5;
+  border-bottom: 3px solid #e5e5e5;}
+
+.tab_list li.active a, .tab_list li a:hover {
+  color: #666;
+  background-color: #e5e5e5;}
+
+
+/********** PANELS **********/
+.tab_panel {
+  display: none;
+  background-color: #e5e5e5;
+  color: #666;
+  min-height: 150px;
+  overflow: auto;}
+
+.tab_panel.active {
+  display: block;}
+
+.tab_panel p {
+  margin: 20px;}
+    </style>
+</head>
+<body>
+        <header><h1>Monsieur Pigeon</h1></header>
+
+        <section class="page">
+    
+          <div class="tabs">
+    
+            <ul class="tab_list">
+              <li class="active"><a class="tab_control" href="#tab-1"><h3>柑橘摘果</h3></a></li>
+              <li><a class="tab_control" href="#tab-2"><h3>製作香橙蛋糕</h3></a></li>
+              <li><a class="tab_control" href="#tab-3"><h3>橘子手工果醬</h3></a></li>
+            </ul>
+    
+            <div class="tab_panel active" id="tab-1">
+                    <div class="pickpeople col-6">
+                            <img src="img/pickpeople.jpg" alt="體驗遊客">
+                        </div>
+                        <div class="intro col-6">
+                            <div class="item detail"><h4>果園介紹</h4>
+                                  <p>位於海拔430公尺高的永柑果園，因地理環境優勢，坐落於苗栗山區，且因擁有純淨的水源而孕育出了三星桶柑、茂谷柑、無籽桶柑，果肉甜酸多汁，歡迎您蒞臨採果。品嚐。</p>
+                                    </div>
+                            <div class="item detail"><h4>採果內容</h4>
+                               <ul>
+                                    <li>開放採果日期 每年1-3月</li>
+                                    <li>開放採果面積 0.4-0.5公頃</li>
+                                    <li>開放採果人次 10-15人次/每日</li>
+                                    <li>採果前導覽解說+體驗採茂谷柑、桶柑<br>採果後可帶回市價180元的茂谷柑或桶柑。</li>
+                                    <li>所需花費時間 1.5小時</li>
+                                    <li> 每人所需費用350元/人品嚐。</li>
+                                </ul>   
+                                    </div> <a class="btn" href="#">立即預約</a>
+                            <div class="clearfix"></div>
+                        </div>
+            </div>
+    
+            <div class="tab_panel" id="tab-2">
+                    <div class="pickpeople col-6">
+                            <img src="img/pickpeople.jpg" alt="體驗遊客">
+                        </div>
+                        <div class="intro col-6">
+                            <div class="item detail"><h4>果園介紹</h4>
+                                  <p>位於海拔430公尺高的永柑果園，因地理環境優勢，坐落於苗栗山區，且因擁有純淨的水源而孕育出了三星桶柑、茂谷柑、無籽桶柑，果肉甜酸多汁，歡迎您蒞臨採果。品嚐。</p>
+                                    </div>
+                            <div class="item detail"><h4>採果內容</h4>
+                               <ul>
+                                    <li>開放採果日期 每年1-3月</li>
+                                    <li>開放採果面積 0.4-0.5公頃</li>
+                                    <li>開放採果人次 10-15人次/每日</li>
+                                    <li>採果前導覽解說+體驗採茂谷柑、桶柑<br>採果後可帶回市價180元的茂谷柑或桶柑。</li>
+                                    <li>所需花費時間 1.5小時</li>
+                                    <li> 每人所需費用350元/人品嚐。</li>
+                                </ul>   
+                                    </div> <a class="btn" href="#">立即預約</a>
+                            <div class="clearfix"></div>
+                        </div>
+            </div>
+            </div>
+    
+            <div class="tab_panel" id="tab-3">
+                    <div class="pickpeople col-6">
+                            <img src="img/pickpeople.jpg" alt="體驗遊客">
+                        </div>
+                        <div class="intro col-6">
+                            <div class="item detail"><h4>果園介紹</h4>
+                                  <p>位於海拔430公尺高的永柑果園，因地理環境優勢，坐落於苗栗山區，且因擁有純淨的水源而孕育出了三星桶柑、茂谷柑、無籽桶柑，果肉甜酸多汁，歡迎您蒞臨採果。品嚐。</p>
+                                    </div>
+                            <div class="item detail"><h4>採果內容</h4>
+                               <ul>
+                                    <li>開放採果日期 每年1-3月</li>
+                                    <li>開放採果面積 0.4-0.5公頃</li>
+                                    <li>開放採果人次 10-15人次/每日</li>
+                                    <li>採果前導覽解說+體驗採茂谷柑、桶柑<br>採果後可帶回市價180元的茂谷柑或桶柑。</li>
+                                    <li>所需花費時間 1.5小時</li>
+                                    <li> 每人所需費用350元/人品嚐。</li>
+                                </ul>   
+                                    </div> <a class="btn" href="#">立即預約</a>
+                            <div class="clearfix"></div>
+                        </div>
+            </div>
+            </div>
+    
+          </div><!-- .tabs -->
+    
+        </section><!-- .page -->
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $('.tab_list').each(function(){
+            var $this=$(this);
+            var $tab=$this.find('li.active');
+            var $link=$tab.find('a');
+            var $panel=$($link.attr('href'));
+            $this.on('click','.tab_control',function(e){
+                e.preventDefault();
+                var $link = $(this);
+                var     id = this.hash;
+                if(id && !$link.is('.active')){
+                    $panel.removeClass('active');
+                    $tab.removeClass('active');
+
+                    $panel=$(id).addClass('active');
+                    $tab = $link.parent().addClass('active');
+                }        
+            });
+        });
+        </script>
+</body>
+</html>
