@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 html,
 body,
 div,
@@ -137,16 +138,11 @@ table {
   unicode-range: U+6C38, U+67D1, U+89C0, U+5149, U+679C, U+5712, U+9AD4, U+9A57, U+6D3B, U+52D5, U+806F, U+7D61, U+6211, U+5011, U+8CFC, U+8CB7, U+8FB2, U+7522, U+5C0F, U+8FB2, U+7D00, U+4E8B, U+95DC, U+65BC, U+6A58, U+5546, U+54C1, U+82B1, U+7D6E, U+65E5, U+4E00, U+4E8C, U+4E09, U+56DB, U+4E94, U+516D, U+63A1, U+6458, U+5834, U+6545, U+88FD, U+4F5C, U+9999, U+6A59, U+86CB, U+7CD5, U+5B50, U+624B, U+5DE5, U+91AC, U+7522, U+898f, U+683C, U+548C, U+6CE8, U+610F, U+9805;
 }
 
-@font-face {
-  font-family: 'NotoSans';
-  src: url("files/NotoSansTC-Regular.otf") format("opentype");
-}
-
 body {
   font-size: 16px;
   background-image: -webkit-gradient(linear, left top, right top, from(#f5f7fa), to(#c3cfe2));
   background-image: linear-gradient(to right, #f5f7fa 0%, #c3cfe2 100%);
-  font-family: 'NotoSans';
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 picture {
@@ -376,20 +372,19 @@ div[class*='col-'] {
 }
 
 .page_header nav ul li a {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.4rem;
   font-family: 'kangxi';
   text-shadow: 0px 0px 5px #222, 0px 0px 2px #222;
   text-transform: uppercase;
-  color: #fff;
   text-decoration: none;
+  color: #fff;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  font-size: 1.4rem;
-  display: block;
-  padding: 20px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 .page_header nav ul li a:hover {
@@ -1019,7 +1014,6 @@ button {
 .cale {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 15px;
   margin: auto;
   position: relative;
   font-size: 0px;
@@ -1093,7 +1087,7 @@ button {
 
 .cale .txt h3,
 .cale .txt p {
-  font-family: 'NotoSans';
+  font-family: 'Noto Sans TC', sans-serif;
   color: #eee;
 }
 
@@ -1517,7 +1511,7 @@ textarea {
 form {
   padding: 37.5px;
   margin: 50px 0;
-  font-family: 'NotoSans';
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 .email {
